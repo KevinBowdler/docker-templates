@@ -1,0 +1,8 @@
+https://github.com/limetech/docker-templates
+https://github.com/KevinBowdler/docker-templates
+https://github.com/jshridha/templates
+https://github.com/codechimp-org/unraid-docker-templates
+https://raw.githubusercontent.com/Squidly271/community.applications/master/plugins/community.applications.plg
+https://github.com/gfjardim/docker-containers/tree/templates
+https://github.com/linuxserver/docker-templates
+https://github.com/PhAzE-Variance/PhAzE-Plugin-Repository
