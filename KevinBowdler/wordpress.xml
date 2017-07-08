@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Wordpress</Name>
-  <Description>Wordpress template for use with MySql[br]IMPORTANT :- YOU MUST CHANGE THE HOST PORT BELOW</Description>
+  <Name>Wordpress_[APPNAME]</Name>
+  <Description>Wordpress template for use with MySql Db [br]IMPORTANT :- YOU MUST CHANGE THE NAME, HOST PORT, VOLUME AND EXTRA PARAMS BELOW</Description>
   <Registry>https://hub.docker.com/_/wordpress/</Registry>
   <Repository>wordpress</Repository>
   <BindTime>true</BindTime>
@@ -19,19 +19,14 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/wordpress_test/www/html</HostDir>
+      <HostDir>/mnt/cache/appdata/wordpress_[APPNAME]/www/html</HostDir>
       <ContainerDir>/var/www/html</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/wordpress_test/www/html/wp-content</HostDir>
-      <ContainerDir>/var/www/html/wordpress/wp-content</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Version></Version>
   <WebUI>http://[iP]:[PORT:81]/</WebUI>
   <Banner></Banner>
-  <Icon></Icon>
-  <ExtraParams>--link mysql:mysql -e WORDPRESS_DB_NAME=wordpress_test</ExtraParams>
+  <Icon>https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/wordpress/logo.png</Icon>
+  <ExtraParams>--link mysql:mysql -e WORDPRESS_DB_NAME=wp_[DBNAME]</ExtraParams>
 </Container>
