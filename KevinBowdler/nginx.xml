@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2017-07-07</Date>
+  <Beta>False</Beta>
+  <Category></Category>
+  <Name>NGinX</Name>
+  <Project></Project>
+  <Changes/>
+  <Overview>
+
+  </Overview>
+  <Description />
+  <Registry>https://hub.docker.com/_/nginx/</Registry>
+  <GitHub>https://github.com/limetech/dockerapp-plex</GitHub>
+  <Repository>nginx</Repository>
+  <Support/>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/plexmediaserver</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI/>
+  <Banner/>
+  <Icon>http://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
+</Containers>

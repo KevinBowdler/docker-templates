@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2017-07-07</Date>
+  <Beta>False</Beta>
+  <Category></Category>
+  <Name>WordPress</Name>
+  <Project></Project>
+  <Changes/>
+  <Overview>
+
+  </Overview>
+  <Description />
+  <Registry>https://hub.docker.com/_/wordpress/</Registry>
+  <Repository>wordpress</Repository>
+  <Support/>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8888</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/plexmediaserver</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI/>
+  <Banner/>
+  <Icon>http://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
+</Containers>
