@@ -6,3 +6,9 @@ https://raw.githubusercontent.com/Squidly271/community.applications/master/plugi
 https://github.com/gfjardim/docker-containers/tree/templates
 https://github.com/linuxserver/docker-templates
 https://github.com/PhAzE-Variance/PhAzE-Plugin-Repository
+
+
+
+http://www.m0tbx.com/wp-content/uploads/2017/07/cropped-257b-001.jpg
+
+wordpress/wp-content/:/var/www/html/wp-content

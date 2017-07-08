@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
-  <Date>2017-07-07</Date>
-  <Beta>False</Beta>
-  <Category></Category>
-  <Name>WordPress</Name>
-  <Project></Project>
-  <Changes/>
-  <Overview>
-
-  </Overview>
-  <Description />
+<Container>
+  <Name>Wordpress</Name>
+  <Description>Wordpress template for use with MySql[br]IMPORTANT :- YOU MUST CHANGE THE HOST PORT BELOW</Description>
   <Registry>https://hub.docker.com/_/wordpress/</Registry>
   <Repository>wordpress</Repository>
-  <Support/>
   <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
+  <Environment/>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8888</HostPort>
+        <HostPort>81</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
-  <Environment/>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/plexmediaserver</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <HostDir>/mnt/cache/appdata/wordpress_test/www/html</HostDir>
+      <ContainerDir>/var/www/html</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/wordpress_test/www/html/wp-content</HostDir>
+      <ContainerDir>/var/www/html/wordpress/wp-content</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI/>
-  <Banner/>
-  <Icon>http://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
-</Containers>
+  <Version></Version>
+  <WebUI>http://[iP]:[PORT:81]/</WebUI>
+  <Banner></Banner>
+  <Icon></Icon>
+  <ExtraParams>--link mysql:mysql -e WORDPRESS_DB_NAME=wordpress_test</ExtraParams>
+</Container>
