@@ -19,8 +19,8 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/nginx_[APPNAME]</HostDir>
-      <ContainerDir>/usr/share/nginx</ContainerDir>
+      <HostDir>/mnt/cache/appdata/nginx_[APPNAME]/sites-available</HostDir>
+      <ContainerDir>/usr/share/nginx/sites-available</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
