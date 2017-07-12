@@ -19,18 +19,23 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/nginx_[APPNAME]/sites-enabled</HostDir>
+      <HostDir>/mnt/user/appdata/nginx_[APPNAME]/sites-enabled</HostDir>
       <ContainerDir>/etc/nginx/sites-enabled</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/nginx_[APPNAME]/sites-available</HostDir>
+      <HostDir>/mnt/user/appdata/nginx_[APPNAME]/sites-available</HostDir>
       <ContainerDir>/etc/nginx/sites-available</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/nginx_[APPNAME]/html</HostDir>
+      <HostDir>/mnt/user/appdata/nginx_[APPNAME]/html</HostDir>
       <ContainerDir>/usr/share/nginx/html</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/nginx_[APPNAME]/config</HostDir>
+      <ContainerDir>/etc/nginx/conf.d</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
