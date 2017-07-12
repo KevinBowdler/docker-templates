@@ -19,8 +19,13 @@
   </Networking>
   <Data>
     <Volume>
+      <HostDir>/mnt/cache/appdata/nginx_[APPNAME]/sites-enabled</HostDir>
+      <ContainerDir>/etc/nginx/sites-enabled</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
       <HostDir>/mnt/cache/appdata/nginx_[APPNAME]/sites-available</HostDir>
-      <ContainerDir>/usr/share/nginx/sites-available</ContainerDir>
+      <ContainerDir>/etc/nginx/sites-available</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
