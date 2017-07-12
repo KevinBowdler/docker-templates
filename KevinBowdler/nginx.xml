@@ -28,6 +28,11 @@
       <ContainerDir>/etc/nginx/sites-available</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/nginx_[APPNAME]/html</HostDir>
+      <ContainerDir>/usr/share/nginx/html</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Version></Version>
   <WebUI>http://[iP]:[PORT:81]/</WebUI>
