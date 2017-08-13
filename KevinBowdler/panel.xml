@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Panel</Name>
+  <Description>Panel template IMPORTANT :- YOU MUST CHANGE THE NAME AND PORT BELOW</Description>
+  <Registry>https://hub.docker.com/r/kevinb/texecom-slack-bot</Registry>
+  <Repository>panel</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>10011</HostPort>
+        <ContainerPort>10011</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Version></Version>
+  <WebUI>http://[iP]:[PORT:81]/</WebUI>
+  <Banner></Banner>
+  <Icon></Icon>
+  <ExtraParams></ExtraParams>
+</Container>
