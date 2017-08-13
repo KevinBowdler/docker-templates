@@ -3,7 +3,7 @@
   <Name>Panel</Name>
   <Description>Panel template IMPORTANT :- YOU MUST CHANGE THE NAME AND PORT BELOW</Description>
   <Registry>https://hub.docker.com/r/kevinb/texecom-slack-bot</Registry>
-  <Repository>kbowdler/texecom-slack-bot</Repository>
+  <Repository>kevinb/texecom-slack-bot</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
