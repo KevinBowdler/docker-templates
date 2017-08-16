@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Name>Panel</Name>
-  <Description>Panel template IMPORTANT :- YOU MUST CHANGE THE NAME AND PORT BELOW</Description>
+  <Description>Panel template IMPORTANT :- YOU MUST CHANGE THE NAME, VOLUME AND PORT BELOW</Description>
   <Registry>https://hub.docker.com/r/kevinb/texecom-slack-bot</Registry>
   <Repository>kevinb/texecom-slack-bot</Repository>
   <BindTime>true</BindTime>
@@ -17,6 +17,13 @@
       </Port>
     </Publish>
   </Networking>
+    <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/panel/config</HostDir>
+      <ContainerDir>/usr/panel/app/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Version></Version>
   <WebUI>http://[iP]:[PORT:81]/</WebUI>
   <Banner></Banner>
