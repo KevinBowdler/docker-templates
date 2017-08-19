@@ -24,6 +24,16 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+    <Environment>
+    <Variable>
+      <Name>HOST</Name>
+      <Value>0.0.0.0</Value>
+    </Variable>
+    <Variable>
+      <Name>PORT</Name>
+      <Value>10011</Value>
+    </Variable>
+  </Environment>
   <Version></Version>
   <WebUI>http://[iP]:[PORT:81]/</WebUI>
   <Banner></Banner>

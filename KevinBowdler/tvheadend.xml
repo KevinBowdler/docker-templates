@@ -61,6 +61,10 @@ Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV D
       <ContainerDir>/recordings</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <ContainerDir>/timeshift</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <Environment>
     <Variable>
