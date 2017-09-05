@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Name>ElasticSearch</Name>
-  <Description>ElasticSearch</Description>
+  <Description>Official ElasticSearch Image</Description>
   <Registry>docker.elastic.co/elasticsearch/elasticsearch</Registry>
-  <Repository>elasticsearch/elasticsearch</Repository>
+  <Repository>elasticsearch</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>

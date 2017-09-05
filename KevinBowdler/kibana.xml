@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Kibana</Name>
+  <Description>Official Kibana Image</Description>
+  <Registry>docker.elastic.co/kibana/kibana</Registry>
+  <Repository>kibana</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Environment>
+    <Variable>
+      <Name>ELASTICSEARCH_URL</Name>
+      <Value>http://elasticsearch:9200</Value>
+    </Variable>
+    <Variable>
+      <Name>ELASTICSEARCH_USERNAME</Name>
+      <Value>elastic</Value>
+    </Variable>
+    <Variable>
+      <Name>ELASTICSEARCH_PASSWORD</Name>
+      <Value>changeme</Value>
+    </Variable>
+    <Variable>
+      <Name>SERVER_PORT</Name>
+      <Value>5601</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9200</HostPort>
+        <ContainerPort>9200</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9300</HostPort>
+        <ContainerPort>9300</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/kibana/config/kibana.yml</HostDir>
+      <ContainerDir>/usr/share/kibana/config/kibana.yml</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <WebUI>http://[iP]:9200/</WebUI>
+  <Banner></Banner>
+  <Icon></Icon>
+  <ExtraParams></ExtraParams>
+</Container>
