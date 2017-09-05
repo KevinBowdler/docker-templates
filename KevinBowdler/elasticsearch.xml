@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>ElasticSearch_[APPNAME]</Name>
-  <Description>ElasticSearch_ template IMPORTANT :- YOU MUST CHANGE THE NAME AND VOLUME BELOW</Description>
-  <Registry>https://hub.docker.com/_/elasticsearch/</Registry>
-  <Repository>elasticsearch</Repository>
+  <Name>ElasticSearch</Name>
+  <Description>ElasticSearch</Description>
+  <Registry>docker.elastic.co/elasticsearch/elasticsearch</Registry>
+  <Repository>elasticsearch/elasticsearch</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
@@ -24,18 +24,13 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/elasticsearch_[APPNAME]/config</HostDir>
-      <ContainerDir>/usr/share/elasticsearch/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/elasticsearch_[APPNAME]/esdata</HostDir>
+      <HostDir>/mnt/cache/appdata/elasticsearch/esdata</HostDir>
       <ContainerDir>/usr/share/elasticsearch/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Version></Version>
-  <WebUI>http://[iP]:[PORT:81]/</WebUI>
+  <WebUI>http://[iP]:9200/</WebUI>
   <Banner></Banner>
   <Icon></Icon>
   <ExtraParams></ExtraParams>
