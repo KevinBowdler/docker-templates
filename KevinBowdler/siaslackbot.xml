@@ -2,7 +2,7 @@
 <Container>
   <Name>SIA Slackbot</Name>
   <Description>SIA Slackbot template IMPORTANT :- YOU MUST CHANGE THE NAME, VOLUME AND PORT BELOW</Description>
-  <Registry>https://hub.docker.com/r/kevinb/texecom-slack-bot</Registry>
+  <Registry>https://hub.docker.com/r/kevinb/sia-slackbot</Registry>
   <Repository>kevinb/sia-slackbot</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
