@@ -26,28 +26,11 @@
   </Environment>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>9200</HostPort>
-        <ContainerPort>9200</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>9300</HostPort>
-        <ContainerPort>9300</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
+    <Publish/>>
   </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/kibana/config/kibana.yml</HostDir>
-      <ContainerDir>/usr/share/kibana/config/kibana.yml</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
+  <Data/>
   <Version></Version>
-  <WebUI>http://[iP]:9200/</WebUI>
+  <WebUI>http://[iP]:5601/</WebUI>
   <Banner></Banner>
   <Icon></Icon>
   <ExtraParams></ExtraParams>
