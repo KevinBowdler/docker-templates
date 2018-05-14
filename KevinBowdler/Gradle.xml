@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Gradle</Name>
+  <Description>Gradle template IMPORTANT :- YOU MUST CHANGE THE NAME, VOLUME AND PORT BELOW</Description>
+  <Registry>https://hub.docker.com/_/gradle</Registry>
+  <Repository>_/gradle</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>10011</HostPort>
+        <ContainerPort>10011</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+    <Data/>
+    <Environment>
+    <Variable>
+      <Name>HOST</Name>
+      <Value>0.0.0.0</Value>
+    </Variable>
+    <Variable>
+      <Name>PORT</Name>
+      <Value>10011</Value>
+    </Variable>
+    <Variable>
+      <Name>SLACK_WEBHOOK</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>SLACK_CHANNEL</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>SLACK_USER</Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Version></Version>
+  <WebUI>http://[iP]:[PORT:81]/</WebUI>
+  <Banner></Banner>
+  <Icon></Icon>
+  <ExtraParams>"$PWD":/home/gradle/project -w /home/gradle/project gradle gradle <gradle-task></ExtraParams>
+</Container>
